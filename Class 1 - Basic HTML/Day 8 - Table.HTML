@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- table > tr (row) > td (column) -->
+     <!-- shortcut: table>tr*3>td*5{content} -->
+    
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <!-- Attribute of table: border = "1" mean to set border -->
+     <!-- we will use CSS to edit attribute -->
+
+    <!-- merging the cells -->
+    <p>task 1: merging number 6 and 7 (Use colspan)</p>
+    <p>task 2: merging number 10 and 15 and 20 (Use rowspan)</p>
+    <p>task 3: merging 11,12,16,17</p>
+    <table border="1">
+        <tr>
+            <td>number1</td>
+            <td>number2</td>
+            <td>number3</td>
+            <td>number4</td>
+            <td>number5</td>
+        </tr>
+        <tr>
+            <td colspan="2">number6</td>
+            <td>number8</td>
+            <td>number9</td>
+            <td rowspan="3">number10</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">number11</td>
+            <td>number13</td>
+            <td>number14</td>
+        </tr>
+        <tr>
+            <td>number18</td>
+            <td>number19</td>
+        </tr>
+        <tr>
+            <td>number21</td>
+            <td>number22</td>
+            <td>number23</td>
+            <td>number24</td>
+            <td>number25</td>
+        </tr>
+    </table>
+
+</body>
+</html>
