@@ -1,0 +1,14 @@
+Normal Flow:
+1. When two elements meet within a block (container). It will not able to present at our confortable ways
+    - Example: span sentences + image
+2. When we want to show many spaces or paragraph, it will not appear as what we want
+    - Example: I   am   atomic > I am atomic
+3. Box & Box will have margin in between. We might no wanted to see it
+
+Refer Day 12 for sample.
+
+Solution:
+1. Create Float (Day 13)
+    - The float is a layer on top of the element, so that it will show the message that we want to see.
+    - float make overlap of blocks element, and gaps the situation happened in (normal flow: 3)
+    - float can make the boxes to continue as horizontal. (Commonly use on horizontal directory of website)

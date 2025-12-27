@@ -1,0 +1,12 @@
+CSS is a box
+Content > Padding > Border > Margin
+Imagine a parcel: 
+ - Margin is outside the box, 
+ - Border is space in between box and bubble wrap
+ - Padding is bubble wrap
+ - Content is item
+
+Flex Container:
+ - A container with many boxes inside
+ - Container = Father: we can adjust the general attribute and arrangement of the boxes (alignment, justify, in row/column)
+ - Boxes = In real practise, the boxes size might change from time to time; for example, weigh of particular box want make greater than others. 2:2:1 of the container

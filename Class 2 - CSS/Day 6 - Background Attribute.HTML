@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box1{
+            width: 400px;
+            height: 400px;
+            /* remark: color is for font, background-color is for background */
+            background-color: aqua;
+        }
+
+        .box2{
+            width: 500px;
+            height: 500px;
+            background-image: url("Materials/Shadow\ Sama\ \(2\).webp");
+            /* by default, image will auto repeat to fill up the box size that we set */
+            /* repeat x (repeat only x-axis), repeat y (repeat only y-axis) */
+            background-repeat: no-repeat;
+
+            /* if the image too big but want to set up, use background size */
+            /* background-size: 100% 100%; */
+
+            /* to reserve originality of image size, use blackground size = cover (image size no change, can't see the additional space) */
+
+            /* background size = contain is to ratio adjust to fit the box */
+            background-size: contain;
+
+            /* image and pre-set box size might be different all the time. We have to decide which position to be covered */
+            /* same as the relationship of selfie photo on WhatsApp profile picture */
+            background-position: 0% 0%;
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+
+</body>
+</html>

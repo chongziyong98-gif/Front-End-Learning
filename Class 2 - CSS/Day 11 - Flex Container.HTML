@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: gray;
+
+            /* use display as flex to make this container flexible */
+            display: flex;
+
+            /* flex default arrange boxes as accending row, we can reposition */
+            /* row, row-reverse, column, column-reverse */
+            flex-direction: row;
+
+            /* justify-content */
+            /* Note: in flex-direction, if we already reversed, then the justify will start from end from the reverse, mean from start again */
+            /* flex-start(default), flex-end, flex-center */
+            justify-content: center;
+
+            /* align-items = How we align all boxes. flex-start, flex-end, center */
+            align-items: center;
+        }
+
+        /* flex container, we can use ratio (weight) to indicate what ratio for each box occupy the container */
+        /* the width will no longer affect if flex took place */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            flex: 2;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            flex: 2;
+        }
+
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+</body>
+</html>
