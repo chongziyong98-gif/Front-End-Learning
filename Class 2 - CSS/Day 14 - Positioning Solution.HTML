@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            /* to set up absolute position */
+            position: absolute;
+            /* followed by left right top bottom any (this is to add distance for margin) */
+            left: 50px;
+            top: 50px;
+            /* We can set z-index to set which layer to be in-front when overlap happen */
+            z-index: 100;
+        }
+
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            /* z-index only can be used for positioned attribute */
+
+        }
+
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            /* z-index don't have fixed figure, calculation take place. */
+            z-index: 50;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+
+</body>
+</html>

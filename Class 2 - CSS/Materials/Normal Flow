@@ -12,3 +12,20 @@ Solution:
     - The float is a layer on top of the element, so that it will show the message that we want to see.
     - float make overlap of blocks element, and gaps the situation happened in (normal flow: 3)
     - float can make the boxes to continue as horizontal. (Commonly use on horizontal directory of website)
+
+    Problem arise from Floating (Day 13 - cont)
+     - Possible overlapping on floated item and no-floated items.
+
+     Solution:
+     - Add height on block (but most of the time, height setup is repeative & not good to see)
+     - Use clear: both for non-float element. (If under same block)
+     - Use overflow: hidden + clear: both for block (If element in different block)
+
+2. Create Position (Day 14)
+    - Relative Position (This method doesn't fix the normal flow)
+    - Absolute Position (For each position set, each layer will be created, so they will overlap each others)
+    - Fixed Position (This position will always remain fixed, no matter how page are moved. For example in real life, the trademark)
+
+    Problem arise from position (Day 14 - cont)
+    - All positioning will inherit from container (father)
+    

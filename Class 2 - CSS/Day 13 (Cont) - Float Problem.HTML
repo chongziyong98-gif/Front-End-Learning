@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            width: 500px;
+            background-color: gray;
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 5px;
+            float: left;
+        }
+        /* if box float but "text" no float, the box will overlap "text". */
+        .text1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 5px;
+            /* solution 1: clear = clear the float.  */
+            clear: both;
+        }
+        
+        .container2{
+            width: 500px;
+            background-color: gray;
+            /* solution 2: to hide overflow and clear the block float */
+            overflow: hidden;
+            clear: both;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 5px;
+            float: left;
+        }
+
+        .text2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- situation 1: float of elements with same block -->
+    <h2>This is sitation 1</h2>
+    <div class="container1">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="text1"></div>
+    </div>
+
+    <!-- situation 2: float of elements with different block -->
+    <h2>This is sitation 2</h2>
+    <div class="container2">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+
+    </div>
+        <div class="text2"></div>
+
+</body>
+</html>
